@@ -1,0 +1,15 @@
+{
+  "model_name": "Logistic Regression (Balanced)",
+  "model_type": "Multinomial Softmax Linear Classifier",
+  "test_macro_f1": 0.4746,
+  "test_accuracy": 0.5060,
+  "test_macro_recall": 0.5040,
+  "test_cat0_recall": 0.4848,
+  "dataset_name": "CrisisMMD v2.0",
+  "disaster_events_count": 7,
+  "total_samples": 16058,
+  "train_samples": 11584,
+  "test_samples": 2237,
+  "dev_samples": 2237,
+  "categories_count": 5
+}

@@ -1,0 +1,10 @@
+.cache/
+__pycache__/
+*.pyc
+nltk_data/
+venv/
+.venv/
+.env
+.DS_Store
+data/rescueai.db
+models/random_forest_model.joblib

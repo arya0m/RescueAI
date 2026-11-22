@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+/* RescueAI Ops Console Styling (< 120 lines) */
+html, body, .stApp, .main, [class*="css"] {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #E6EAF0;
+    background-color: #0E1116 !important;
+}
+
+/* Eliminate excessive padding for 1440x900 viewport fit */
+.block-container {
+    padding: 0.4rem 1.2rem 0.5rem 1.2rem !important;
+    max-width: 100% !important;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+    height: 1.5rem !important;
+}
+
+[data-testid="stToolbar"], #MainMenu, footer {
+    display: none !important;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: #151A21;
+    border-right: 1px solid #262F3A;
+    width: 180px !important;
+}
+
+section[data-testid="stSidebar"] .block-container {
+    padding: 1rem 0.75rem !important;
+}
+
+/* Typography & Mono Figures */
+.mono {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+.label-upper {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8B97A6;
+    font-weight: 600;
+}
+
+/* Panel Containers */
+.ops-panel {
+    background-color: #151A21;
+    border: 1px solid #262F3A;
+    border-radius: 6px;
+    padding: 12px 14px;
+}
+
+.ops-panel-sub {
+    background-color: #1B222B;
+    border: 1px solid #262F3A;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+/* Compact Forms & Buttons */
+.stButton > button {
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+    border: 1px solid #262F3A;
+    background-color: #1B222B;
+    color: #E6EAF0;
+    transition: all 0.15s ease-out;
+}
+
+.stButton > button:hover {
+    border-color: #F2A33A;
+    color: #F2A33A;
+}
+
+.stButton > button[kind="primary"] {
+    background-color: #F2A33A !important;
+    color: #0E1116 !important;
+    border: 1px solid #F2A33A !important;
+}
+
+.stTextArea textarea, .stTextInput input, .stSelectbox [data-baseweb="select"] {
+    background-color: #151A21 !important;
+    border: 1px solid #262F3A !important;
+    border-radius: 4px !important;
+    color: #E6EAF0 !important;
+    font-size: 13px !important;
+}
+
+/* Folium map frame clean borders and prevent map collapsing */
+iframe[title*="folium"], iframe[title*="streamlit_folium"] {
+    width: 100% !important;
+    min-height: 360px !important;
+    height: 360px !important;
+    display: block !important;
+    background-color: #0E1116 !important;
+    border: 1px solid #262F3A !important;
+    border-radius: 6px !important;
+}
+
+iframe {
+    border: none;
+    background-color: transparent;
+}
+
+/* Highlighted Term Spans */
+.term-hl-pred {
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+    background: rgba(229, 83, 75, 0.2);
+    border: 1px solid rgba(229, 83, 75, 0.4);
+}
+
+.term-hl-runner {
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+    background: rgba(242, 163, 58, 0.2);
+    border: 1px solid rgba(242, 163, 58, 0.4);
+}
