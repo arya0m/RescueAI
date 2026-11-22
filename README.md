@@ -69,7 +69,7 @@ All algorithms were trained on the **Training set ($N=11,584$)**, tuned on the *
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/RescueAI.git
+git clone https://github.com/arya0m/RescueAI.git
 cd RescueAI
 ```
 
